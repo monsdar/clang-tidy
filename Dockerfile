@@ -1,5 +1,7 @@
-FROM conanio/clang7
+FROM conanio/clang8
 
 RUN sudo apt-get -qq update \
     && sudo apt-get install -y --no-install-recommends \
-    clang-tidy-7
+    clang-tidy-8 \
+    clang-format-8
+    
